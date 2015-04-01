@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Gym Móvil</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="label.login.session">Iniciar Sesión</string>
+    <string name="label.login.user">Usuario</string>
+    <string name="label.login.password">Contraseña</string>
+    <string name="button.login.sign.in">Iniciar</string>
+    <string name="button.login.sign.up.google">Google +</string>
+    <string name="title_activity_login">GYM Móvil</string>
+</resources>

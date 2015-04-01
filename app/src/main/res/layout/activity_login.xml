@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="riverasgroup.gymmovil.activities.Login">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/label.login.session"
+        android:id="@+id/label.login.session"
+        android:textColor="@color/black"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:textSize="@dimen/font_larger"
+        android:padding="@dimen/padding_normal"/>
+
+    <View android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:id="@+id/view.line"
+        android:background="@color/black"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/label.login.session"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/label.login.user"
+        android:id="@+id/textView"
+        android:layout_below="@+id/view.line"
+        android:layout_alignParentStart="true"
+        android:padding="@dimen/padding_medium"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_user"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/view.line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/label.login.password"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/txt_user"
+        android:layout_alignParentStart="true"
+        android:padding="@dimen/padding_medium"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_password"
+        android:inputType="textPassword"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignEnd="@+id/txt_user"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/txt_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:id="@+id/linearLayout">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button.login.sign.in"
+            android:id="@+id/button_login_sign_in"
+            android:padding="@dimen/padding_medium"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Ó"
+            android:layout_weight="1.5"
+            android:id="@+id/label.login.o"
+            android:padding="@dimen/padding_small"
+            android:gravity="center_horizontal"
+           />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_sign_up_google_plus"
+            android:padding="@dimen/padding_small"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+</RelativeLayout>
